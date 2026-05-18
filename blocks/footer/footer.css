@@ -1,20 +1,185 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #f4f4f4;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  color: var(--text-color);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
+footer .section {
   margin: 0;
 }
 
+footer .section > div {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* Shipping Banner */
+.footer-shipping-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.footer-shipping {
+  background-color: #e7e6e6;
+  padding: 40px 24px 8px;
+  text-align: left;
+}
+
+.footer-shipping h5 {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.footer-shipping p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.footer-shipping a {
+  text-decoration: underline;
+}
+
+/* Footer Links Grid */
+.footer-links-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.footer-links {
+  padding: 32px 24px;
+}
+
+.footer-links > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  .footer-links > div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
   }
+}
+
+.footer-links > div > div h6 {
+  font-family: var(--body-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.footer-links > div > div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links > div > div ul li {
+  margin: 0 0 8px;
+}
+
+.footer-links > div > div ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-links > div > div ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-links > div > div p {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.footer-links > div > div p a {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+/* Footer Legal / Bottom Bar */
+.footer-legal-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.footer-legal {
+  padding: 16px 24px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-legal p {
+  font-size: 10px;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.footer-legal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 8px;
+}
+
+.footer-legal ul li {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.footer-legal ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-legal ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-legal ul li::after {
+  content: "//";
+  margin-left: 8px;
+  color: var(--text-color);
+}
+
+.footer-legal ul li:last-child::after {
+  content: "";
+}
+
+/* Button override — reset buttons to plain links in footer */
+footer .button-container { display: inline; }
+footer a.button:any-link {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  display: inline;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+footer a.button:any-link:hover {
+  background: none;
+  color: var(--link-hover-color);
+  text-decoration: underline;
 }
