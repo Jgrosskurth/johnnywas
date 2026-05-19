@@ -124,11 +124,11 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  // Support 4-section layout (top-bar, brand, sections, tools) or 3-section (brand, sections, tools)
+  // Support 4-section layout (top-bar, brand, sections, tools) or 3-section (top-bar, brand, sections)
   const childCount = nav.children.length;
   const classes = childCount > 3
     ? ['top-bar', 'brand', 'sections', 'tools']
-    : ['brand', 'sections', 'tools'];
+    : ['top-bar', 'brand', 'sections'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
