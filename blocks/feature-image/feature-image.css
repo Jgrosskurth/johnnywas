@@ -1,0 +1,34 @@
+.feature-image-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.feature-image {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.feature-image > div {
+  position: relative;
+}
+
+.feature-image picture {
+  display: block;
+  line-height: 0;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feature-image .feature-image-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+  text-decoration: none;
+}
