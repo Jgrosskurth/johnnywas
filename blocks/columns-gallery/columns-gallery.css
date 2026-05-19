@@ -1,0 +1,40 @@
+.columns-gallery-container .columns-gallery-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.columns-gallery > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.columns-gallery > div > div {
+  flex: 1;
+}
+
+.columns-gallery > div > .columns-gallery-img-col {
+  line-height: 0;
+}
+
+.columns-gallery > div > .columns-gallery-img-col picture {
+  display: block;
+}
+
+.columns-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (width >= 600px) {
+  .columns-gallery > div {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .columns-gallery > div > div {
+    flex: 1;
+  }
+}

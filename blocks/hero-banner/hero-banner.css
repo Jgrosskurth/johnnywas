@@ -1,0 +1,42 @@
+.hero-banner-container .hero-banner-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero-banner {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-banner > div {
+  padding: 0;
+}
+
+.hero-banner > div > div {
+  padding: 0;
+}
+
+.hero-banner p {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.hero-banner a {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.hero-banner picture {
+  display: block;
+  position: relative;
+  line-height: 0;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

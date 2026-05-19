@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.johnnywas.com/"],
+      "description": "Main homepage with hero banners, featured collections, and brand storytelling",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": [".experience-commerce_assets-imageWithTextAndTwoCTA .image-with-text-container.full-bleed"]
+        },
+        {
+          "name": "columns-gallery",
+          "instances": [".experience-commerce_assets-sideBySideComponent"]
+        },
+        {
+          "name": "hero-overlay",
+          "instances": [".experience-commerce_assets-wideImageWithText .col-12.component-container.full-bleed"]
+        }
+      ]
+    },
+    {
+      "name": "category-page",
+      "urls": [
+        "https://www.johnnywas.com/new-arrivals",
+        "https://www.johnnywas.com/clothing",
+        "https://www.johnnywas.com/accessories"
+      ],
+      "description": "Category landing page with product grid, filters, and promotional banners",
+      "blocks": []
+    },
+    {
+      "name": "content-page",
+      "urls": ["https://www.johnnywas.com/our-story"],
+      "description": "Editorial content page with brand story, imagery, and rich text content",
+      "blocks": []
+    }
+  ]
+}
