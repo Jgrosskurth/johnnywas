@@ -331,7 +331,7 @@ header nav .nav-sections ul > li > ul > li {
     padding: 16px;
     background-color: #fff;
     white-space: initial;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
     z-index: 10;
   }
 
@@ -367,7 +367,7 @@ header nav .nav-tools {
   align-items: center;
 }
 
-.header.block .nav-tools p {
+.header.block .nav-tools .default-content-wrapper p {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -377,14 +377,14 @@ header nav .nav-tools {
   white-space: nowrap;
 }
 
-.header.block .nav-tools a {
+.header.block .nav-tools .default-content-wrapper p a:any-link {
   text-decoration: none;
   color: var(--text-color);
   font-size: 11px;
   letter-spacing: 0.3px;
 }
 
-.header.block .nav-tools a:hover {
+.header.block .nav-tools .default-content-wrapper p a:any-link:hover {
   color: #000;
 }
 
