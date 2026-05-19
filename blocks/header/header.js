@@ -124,17 +124,23 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  // Support 4-section layout (top-bar, brand, sections, tools) or 3-section (brand, sections, tools)
+  const childCount = nav.children.length;
+  const classes = childCount > 3
+    ? ['top-bar', 'brand', 'sections', 'tools']
+    : ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (navBrand) {
+    const brandLink = navBrand.querySelector('.button');
+    if (brandLink) {
+      brandLink.className = '';
+      brandLink.closest('.button-container').className = '';
+    }
   }
 
   const navSections = nav.querySelector('.nav-sections');
