@@ -57,7 +57,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.4;
+  line-height: 16px;
 }
 
 body.appear {
@@ -65,7 +65,7 @@ body.appear {
 }
 
 header {
-  height: calc(var(--nav-height) + 40px);
+  height: calc(var(--nav-height) + 40px); /* 66px nav + 40px topbar = 106px */
 }
 
 header .header,
@@ -84,8 +84,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin: 0;
   font-family: var(--heading-font-family);
   font-weight: 400;
   line-height: 1.2;
@@ -93,6 +92,7 @@ h6 {
   letter-spacing: normal;
   text-transform: none;
   color: #000;
+  text-align: center;
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }

@@ -1,17 +1,15 @@
 :root {
   --heading-font-family: "IvyMode", serif;
   --body-font-family: "Avenir Next LT W05 Regular", "avenir-next", sans-serif;
-  --background-color: #ffffff;
-  --text-color: rgb(46, 46, 46);
-  --link-color: rgb(68, 68, 68);
-  --link-hover-color: rgb(30, 30, 30);
+  --background-color: #fff;
+  --text-color: rgb(46 46 46);
+  --link-color: rgb(68 68 68);
+  --link-hover-color: rgb(30 30 30);
   --section-padding: 0px;
-  --nav-height: 77px;
+  --nav-height: 66px;
 
   /* Brand accent */
   --color-accent: #2e2e2e;
   --color-light-bg: #e8eef5;
   --color-dark-bg: #211e1e;
 }
-
-html, body { overflow: auto !important; }
