@@ -18,6 +18,14 @@
 .hero-overlay > div {
   position: relative;
   z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-overlay > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay h1,

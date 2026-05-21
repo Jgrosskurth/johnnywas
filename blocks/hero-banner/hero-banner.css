@@ -1,11 +1,12 @@
 .hero-banner-container .hero-banner-wrapper {
-  max-width: 100%;
+  max-width: none;
   padding: 0;
 }
 
 .hero-banner {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .hero-banner > div {

@@ -3,22 +3,25 @@
   padding: 0;
 }
 
+.columns-gallery {
+  width: 100%;
+}
+
 .columns-gallery > div {
   display: flex;
   flex-direction: column;
   gap: 0;
+  width: 100%;
 }
 
 .columns-gallery > div > div {
-  flex: 1;
-}
-
-.columns-gallery > div > .columns-gallery-img-col {
-  line-height: 0;
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 .columns-gallery > div > .columns-gallery-img-col picture {
   display: block;
+  line-height: normal;
 }
 
 .columns-gallery img {
@@ -35,6 +38,7 @@
   }
 
   .columns-gallery > div > div {
-    flex: 1;
+    flex: 0 0 50%;
+    width: 50%;
   }
 }
